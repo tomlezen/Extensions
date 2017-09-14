@@ -30,6 +30,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile parent.ext.kotlin_jre
+    compile 'com.zhy.base:fileprovider:1.0.0'
     testCompile 'junit:junit:4.12'
 }
 
