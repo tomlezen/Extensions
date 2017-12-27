@@ -29,6 +29,6 @@ inline fun <reified T: Service> Fragment.startService(vararg params: Pair<String
 
 inline fun <reified T: Any> Fragment.intentFor(): Intent = Intent(activity, T::class.java)
 
-fun Fragment.setWindowStatusBarColor(color: Int) = activity.setWindowStatusBarColor(color)
+fun Fragment.setWindowStatusBarColor(color: Int) = activity?.setWindowStatusBarColor(color)
 
 fun Fragment.inflate(resId: Int, parent: ViewGroup? = null, attachToRoot: Boolean = false) = context.inflate(resId, parent, attachToRoot)

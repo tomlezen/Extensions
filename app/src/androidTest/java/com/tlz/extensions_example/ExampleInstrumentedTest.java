@@ -1,4 +1,4 @@
-package com.tlz.extensions;
+package com.tlz.extensions_example;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

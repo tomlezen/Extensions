@@ -11,7 +11,7 @@ import android.view.WindowManager
  * Time: 15:53.
  */
 
-fun Activity.setWindowStatusBarColor(color: Int) = {
+fun Activity.setWindowStatusBarColor(color: Int) {
   try {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
       window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
