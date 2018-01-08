@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
     setContentView(R.layout.activity_main)
 
     Thread(Runnable {
+      Thread.sleep(4000)
       runOnUiThread {
-        Thread.sleep(2000)
-        content.scrollTo(100, content.y.toInt())
+        content.scrollTo(-100, content.y.toInt())
         setWindowStatusBarColor(Color.RED)
       }
     }).start()
